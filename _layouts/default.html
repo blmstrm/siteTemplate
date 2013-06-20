@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {% assign sections = "Section1|Section2|Section3|Section4|Section5|Section6" | split: '|' %}
+
+    {% include navBar.html %}
+
+    {% for section in sections %}
+
+    {% case section %}
+
+    {% when 'Section1' %}
+    {% assign title = section %}
+
+    {% assign sectionContent = page.section1 %}
+    {% include genericSection.html %}
+
+    {% when 'Section2' %}
+    {% assign title = section %}
+    {% include blogSection.html %}
+
+    {% when 'Section3' %}
+    {% assign title = section %}
+    {% assign sectionContent = page.section3 %}
+    {% include genericSection.html %}
+
+    {% when 'Section4' %}
+    {% assign title = section %}
+    {% assign sectionContent = page.section4%}
+    {% include genericSection.html %}
+
+    {% when 'Section5' %}
+    {% assign title = section %}
+    {% assign sectionContent = page.section5 %}
+    {% include genericSection.html %}
+    {% endcase %}
+
+    {% endfor %}
+    {% include scripts.html %}
+  </body>
+</html>

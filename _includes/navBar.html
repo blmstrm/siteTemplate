@@ -1,0 +1,12 @@
+<div id="navBar">
+  <div id="companyName">
+    {{ site.name }}
+  </div>
+  <ul id=navList">
+    {% for section in sections %} 
+    <li id="navItem"> 
+    {{ section }}
+    </li>
+    {% endfor %}
+  </ul> 
+</div>

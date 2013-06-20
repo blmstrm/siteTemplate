@@ -1,0 +1,148 @@
+@import "als.less";
+@import "semantic.gs";
+
+@column-width: 60;
+@gutter-width: 20;
+@columns: 12; 
+@total-width: 100%;
+
+
+html,body {
+  font-size: 100%;
+  height: 100%;
+  font-family: 'Droid Sans', Sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, .alpha,
+h2, .beta,
+h3, .gamma,
+h4, .delta,
+h5, .epsilon,
+h6, .zeta {
+  font-weight: bold;
+  margin: 0;
+}
+h1, .alpha {
+  font-size: 4.875em;
+  line-height: 0.41025641025641024;
+  margin-bottom: 0.20512820512820512em;
+}
+h2, .beta {
+  font-size: 3.65625em;
+  line-height: 0.5470085470085471;
+  margin-bottom: 0.27350427350427353em;
+}
+h3, .gamma {
+  font-size: 2.4375em;
+  line-height: 0.8205128205128205;
+  margin-bottom: 0.41025641025641024em;
+}
+h4, .delta {
+  font-size: 2.1328125em;
+  line-height: 0.9377289377289377;
+  margin-bottom: 0.46886446886446886em;
+}
+h5, .epsilon {
+  font-size: 1.828125em;
+  line-height: 1.0940170940170941;
+  margin-bottom: 0.5470085470085471em;
+}
+h6, .zeta {
+  font-size: 1.625em;
+  line-height: 1.2307692307692308;
+  margin-bottom: 0.6153846153846154em;
+}
+
+p,
+blockquote {
+  font-size: 1.625em;
+  margin: 0 0 0.6153846153846154em;
+  line-height: 1.2307692307692308;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+dl,
+ol,
+ul {
+  font-size: 1em;
+  margin: 0 0 0.6153846153846154em;
+  padding: 0;
+}
+
+dd,
+dt,
+li {
+  line-height: 1.2307692307692308;
+  margin: 0;
+}
+
+.background-image (@file) {
+  position: relative;
+  background: url(@file) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.pageSection{
+  height: 100%;
+  width: 100%;
+  margin-top: 5em;
+  display: table;
+  .background-image("/img/background.svg");
+}
+
+.sectionContentWrapper{
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.sectionTitle{
+  .column(8);
+  .push(2);
+  margin-top: 1em;
+}
+
+.sectionSubTitle{
+  .column(8);
+  .push(2);
+}
+
+.sectionContent{
+  .column(8);
+  .push(2);
+}
+
+#prev{
+  float:left;
+}
+
+#next{
+  float:right;
+}
+
+
+#navBar{
+
+  #companyName{
+    font-size: 3em;
+    float: left;
+  }
+
+  ul{
+    float: right;
+  }
+
+  li{
+    font-size: 2em;
+    display: inline;
+  }
+}
+
