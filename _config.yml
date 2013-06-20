@@ -1,2 +1,4 @@
 name: Sitename
 pygments: true
+baseurl:blmstrm.github.io/siteTemplate
+
