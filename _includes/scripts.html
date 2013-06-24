@@ -8,7 +8,20 @@
     $("#posts").als({
       visible_items:1,
     });
-  });
+
+    $('a').click(function(){
+      $('html, body').animate({
+	scrollTop: $( $.attr(this, 'href') ).offset().top
+      }, 500);
+      return false;
+    });
+
+    $('.sectionContentWrapper').css({
+      position: 'absolute',
+      top: ($(window).height() - $('.sectionContentWrapper').outerHeight())/2
+    });
+
+  }) ;
 </script>
 
 
