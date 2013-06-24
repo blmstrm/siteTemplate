@@ -53,9 +53,12 @@ body {
   margin: 0;
   padding: 0;
 }
+<<<<<<< HEAD
+=======
 a {
   text-decoration: none;
 }
+>>>>>>> master
 h1,
 .alpha,
 h2,
@@ -133,6 +136,10 @@ li {
 .pageSection {
   height: 100%;
   width: 100%;
+<<<<<<< HEAD
+  margin-top: 5em;
+=======
+>>>>>>> master
   display: table;
   position: relative;
   background: url("/img/background.svg") no-repeat center center;
@@ -144,7 +151,10 @@ li {
 .sectionContentWrapper {
   margin: 0 auto;
   overflow: hidden;
+<<<<<<< HEAD
+=======
   width: 100%;
+>>>>>>> master
 }
 .sectionTitle {
   display: inline;
@@ -174,12 +184,15 @@ li {
 #next {
   float: right;
 }
+<<<<<<< HEAD
+=======
 #navBar {
   width: 100%;
   z-index: 10;
   background: white;
   position: fixed;
 }
+>>>>>>> master
 #navBar #companyName {
   font-size: 3em;
   float: left;
