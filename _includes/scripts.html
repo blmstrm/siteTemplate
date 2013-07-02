@@ -3,6 +3,7 @@
   "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js",
   "js/jquery.als-1.1.min.js",
   "js/skrollr.min.js",
+  "js/responsive-nav.js",
   function(){
     /*Configure any list scrolling variables*/
     $("#posts").als({
@@ -20,6 +21,8 @@
       position: 'absolute',
       top: ($(window).height() - $('.sectionContentWrapper').outerHeight())/2
     });
+
+    var navigation = responsiveNav("#navBar");
 
   }) ;
 </script>
