@@ -2,11 +2,13 @@
   <div id="companyName">
     {{ site.name }}
   </div>
-  <ul id=navList">
-    {% for section in sections %} 
-    <li id="navItem"> 
-    <a href="#{{ section }}">{{ section }}</a>
-    </li>
-    {% endfor %}
-  </ul> 
+  <div id="nav">
+    <ul id="navList">
+      {% for section in sections %} 
+      <li id="navItem"> 
+      <a href="#{{ section }}">{{ section }}</a>
+      </li>
+      {% endfor %}
+    </ul> 
+  </div>
 </div>
