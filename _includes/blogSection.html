@@ -4,31 +4,28 @@
       <h2> 
 	{{ section }}
       </h2>
+    </div>
+    <div class="sectionSubTitle">
+      <h6>	
+	Subtitle
+      </h6>	
+    </div>
+    <div class="sectionContent">
+      <div id="prev">
+	&lt;	
       </div>
-      <div class="sectionSubTitle">
-	<h6>	
-	  Subtitle
-	</h6>	
-	</div>
-	<div class="sectionContent">
-      <div class="als-container" id="posts">
-	<div id="prev" class="als-prev">
-	  &lt;
-	</div>
-	<div id="next" class="als-next">
-	  &gt;
-	</div>
-	<div class="als-viewport">
-	  <ul class="als-wrapper">
-	    {% for post in site.posts %}
-	    <li class="als-item">
+      <div id="next">
+	&gt;
+      </div>
+      <div id='slider' class='swipe'>
+	<div class='swipe-wrap'>
+	  {% for post in site.posts %}
+	  <div>
 	    {{ post.content }}
-	    </li>
-	    {% endfor %}
-	  </ul>
+	  </div>
+	  {% endfor %}
 	</div>
       </div>
     </div>
   </div>
-</div>
 </div>
