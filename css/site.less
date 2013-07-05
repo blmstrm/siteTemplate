@@ -1,4 +1,3 @@
-@import "als.less";
 @import "semantic.gs";
 @import "responsive-nav.css";
 
@@ -126,15 +125,6 @@ li {
   .push(2);
 }
 
-#prev{
-  float:left;
-}
-
-#next{
-  float:right;
-}
-
-
 #navBar{
   font-family: 'Candal';
   width: 100%;
@@ -148,3 +138,19 @@ li {
   }
 }
 
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.swipe-wrap > div {
+  float: left;
+  width: 100%;
+  position: relative;
+}

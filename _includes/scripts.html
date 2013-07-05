@@ -1,15 +1,10 @@
 <script>
   head.js(
   "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js",
-  "js/jquery.als-1.1.min.js",
   "js/skrollr.min.js",
   "js/responsive-nav.js",
+  "js/swipe.js",
   function(){
-    /*Configure any list scrolling variables*/
-    $("#posts").als({
-      visible_items:1,
-    });
-
     $('a').click(function(){
       $('html, body').animate({
 	scrollTop: $( $.attr(this, 'href') ).offset().top
@@ -23,6 +18,13 @@
     });
 
     var navigation = responsiveNav("#nav");
+
+    window.mySwipe = Swipe(document.getElementById('slider'),
+    {
+      auto:4000
+    } 
+    
+    );
 
   }) ;
 </script>
