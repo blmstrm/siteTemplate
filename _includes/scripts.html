@@ -21,10 +21,19 @@
 
     window.mySwipe = Swipe(document.getElementById('slider'),
     {
-      auto:4000
+      auto:0,
+      continuous: false
     } 
-    
     );
+
+    document.getElementById('prev').onclick=function() {
+      window.mySwipe.prev(); 
+    };
+
+    document.getElementById('next').onclick=function() {
+      window.mySwipe.next(); 
+    };
+
 
   }) ;
 </script>

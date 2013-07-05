@@ -32,7 +32,7 @@ font-size:3em;
 }
 
 
-@media screen and (min-width: 45em) and (max-height: 60em) {
+@media screen and (min-width: 40em) and (max-height: 70em) {
   .js #nav {
     position: relative;
     float: right;
