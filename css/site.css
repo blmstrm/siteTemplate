@@ -1,39 +1,4 @@
 @import "responsive-nav.css";
-.als-container {
-  position: relative;
-  width: 100%;
-  margin: 0px auto;
-  z-index: 0;
-}
-.als-viewport {
-  position: relative;
-  margin: 0px auto;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-}
-.als-wrapper {
-  position: relative;
-  list-style: none;
-  width: 100%;
-}
-.als-item {
-  position: relative;
-  display: block;
-  cursor: pointer;
-  float: left;
-  width: 100%;
-  /* TODO Can't set width to 100%
-  Scrolling list goes crazy. 
-  Solution to this problem?*/
-
-  max-width: 960px;
-}
-.als-prev,
-.als-next {
-  cursor: pointer;
-  font-size: 5em;
-}
 body {
   width: 100%;
   *zoom: 1;
@@ -172,12 +137,6 @@ li {
   margin: 0 1.0416666666666665%;
   margin-left: 17.708333333333332%;
 }
-#prev {
-  float: left;
-}
-#next {
-  float: right;
-}
 #navBar {
   font-family: 'Candal';
   width: 100%;
@@ -188,4 +147,29 @@ li {
 #navBar #companyName {
   font-size: 3em;
   float: left;
+}
+.swipe {
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+#prev {
+  font-family: 'Candal';
+  float: left;
+  font-size: 2em;
+}
+#next {
+  font-family: 'Candal';
+  float: left;
+  font-size: 2em;
 }
